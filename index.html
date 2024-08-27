@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Календарне планування</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-EHN7L1769N"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-EHN7L1769N');
+    </script>
+</head>
+
+<body>
+	<div class="container">
+
+		<div>Оберіть семестр 2024-2025 року навчання</div>
+		
+		<button type="button" class="btn btn-primary first semester">1 семестр</button>
+		<button type="button" class="btn btn-primary second semester">2 семестр</button>
+		
+		<div>або вкажіть потрібний проміжок</div>
+
+		<form>	
+			<div>
+				<input type="date" id="start-date" name="start">
+			</div>
+			<div>
+				<input type="date" id="end-date" name="end">
+			</div>
+			<div>
+				<label>Тип тижня:</label><br>
+				<input type="radio" name="week-type" value="a" checked> Тиждень А<br>
+				<input type="radio" name="week-type" value="b"> Тиждень Б<br>
+				<input type="radio" name="week-type" value="both"> Обидва<br>
+			</div>
+			<div>Вибір днів тижня</div>
+			<div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+			  <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" name="day" value="1">
+			  <label class="btn btn-outline-primary me-2" for="btncheck1">Пн</label>
+
+			  <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off" name="day" value="2">
+			  <label class="btn btn-outline-primary me-2" for="btncheck2">Вт</label>
+
+			  <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off" name="day" value="3">
+			  <label class="btn btn-outline-primary me-2" for="btncheck3">Ср</label>
+
+			  <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off" name="day" value="4">
+			  <label class="btn btn-outline-primary me-2" for="btncheck4">Чт</label>
+
+			  <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off" name="day" value="5">
+			  <label class="btn btn-outline-primary me-2" for="btncheck5">Пт</label>
+			</div>
+
+		<div>
+			<button type="submit" class="btn btn-primary show">Визначити дати</button>
+		</div>
+	</form>
+	<div id="out"></div>
+
+</div>
+	
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
